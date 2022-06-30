@@ -1,0 +1,27 @@
+version: "3.5"
+
+services:
+
+    frontend:
+        image: ghcr.io/camptocamp/course_docker_frontend:latest
+        container_name: frontend
+        restart: unless-stopped
+        ports:
+          - 8080:8080
+        environment:
+            BACKEND_HOST: "backend"
+            BACKEND_PORT: "8080"
+
+    backend:
+        image: dharmendrakariya/backend:python
+        container_name: backend
+        restart: unless-stopped
+        ports:
+          - 8000:8080
+        
+     
+networks:
+    
+    default:
+        external: 
+            name: eco-system

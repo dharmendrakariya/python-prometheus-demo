@@ -1,0 +1,47 @@
+version: "3.5"
+
+services:
+
+    prometheus:
+        image: prom/prometheus
+        container_name: prometheus
+        volumes:
+            - ./prometheus/:/etc/prometheus/
+            - prometheus_data:/prometheus
+        command:
+            - '--config.file=/etc/prometheus/prometheus.yml'
+            - '--query.max-samples=100000000'
+            - '--storage.tsdb.path=/prometheus'
+            - '--web.console.libraries=/etc/prometheus/console_libraries'
+            - '--web.console.templates=/etc/prometheus/consoles'
+            - '--storage.tsdb.retention=200h'
+            - '--web.enable-lifecycle'
+            
+        restart: unless-stopped
+        expose:
+            - 9090
+        ports:
+            - "9090:9090"
+        
+    grafana:
+        image: grafana/grafana-enterprise:8.3.6
+        container_name: grafana
+        restart: unless-stopped
+        expose:
+            - 3000
+        ports:
+            - "3000:3000"
+        volumes:
+            - ./grafana/:/etc/grafana/provisioning/
+    
+
+networks:
+    default:
+        external: 
+            name: eco-system
+
+    
+
+volumes:
+    prometheus_data: {}
+    alertmanager-data:
