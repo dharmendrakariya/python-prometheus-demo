@@ -34,6 +34,8 @@ To start the monitoring stack!
 
 then visit http://localhost:9090 for the prometheus and http://localhost:3000 for the grafana
 
+grafana initia password ```username: admin , password: admin```
+
 you can create dashboard using ```dashboard.json```
 
 
