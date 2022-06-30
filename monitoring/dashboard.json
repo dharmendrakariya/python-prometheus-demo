@@ -71,8 +71,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "prometheus",
-            "uid": "qe1gu937z"
+            "type": "prometheus"
           },
           "exemplar": true,
           "expr": "view_total{product=\"geonetwork\"}",
@@ -130,8 +129,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "prometheus",
-            "uid": "qe1gu937z"
+            "type": "prometheus"
           },
           "exemplar": true,
           "expr": "buy_total{product=\"geonetwork\"}",
@@ -189,8 +187,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "prometheus",
-            "uid": "qe1gu937z"
+            "type": "prometheus"
           },
           "exemplar": true,
           "expr": "view_total{product=\"georchestra\"}",
@@ -248,8 +245,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "prometheus",
-            "uid": "qe1gu937z"
+            "type": "prometheus"
           },
           "exemplar": true,
           "expr": "buy_total{product=\"georchestra\"}",
@@ -307,8 +303,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "prometheus",
-            "uid": "qe1gu937z"
+            "type": "prometheus"
           },
           "exemplar": true,
           "expr": "view_total{product=\"geomapfish\"}",
@@ -366,8 +361,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "prometheus",
-            "uid": "qe1gu937z"
+            "type": "prometheus"
           },
           "exemplar": true,
           "expr": "buy_total{product=\"geomapfish\"}",
@@ -393,8 +387,7 @@
   },
   "timepicker": {},
   "timezone": "",
-  "title": "New dashboard",
-  "uid": "HYOV3937k",
+  "title": "Product Dashboard",
   "version": 6,
   "weekStart": ""
 }
