@@ -39,4 +39,6 @@ grafana initia password ```username: admin , password: admin```
 you can create dashboard using ```dashboard.json```
 
 
+### Inspiration
 
+https://dev.to/camptocamp-ops/implement-prometheus-metrics-in-a-flask-application-p18
