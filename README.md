@@ -36,6 +36,12 @@ then visit http://localhost:9090 for the prometheus and http://localhost:3000 fo
 
 grafana initia password ```username: admin , password: admin```
 
+importatnt thing is to set the data source
+
+go to settings -> data source -> prometheus
+
+insert value ```http://prometheus:9090```
+
 you can create dashboard using ```dashboard.json```
 
 
