@@ -88,9 +88,11 @@ visit http://localhost:9091 (pushgateway)
 
 there you will be able to see the pushed metrics by trybatch fake job!
 
-then you can visit http:localhost:9090 (prometheus) to check the metrics over there and finally http://localhost:3000 (grafana) to visualize those metrics!
+then you can visit http://localhost:9090 (prometheus) to check the metrics over there and finally http://localhost:3000 (grafana) to visualize those metrics!
 
 you can create dashboard with the dashboard.json
+
+Note: please check that you have added prometheus data source in grafana!
 
 
 ## Inspiration
