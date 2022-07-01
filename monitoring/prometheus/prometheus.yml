@@ -10,11 +10,11 @@ scrape_configs:
     static_configs:
       - targets: ['backend:8080']
   
-  # - job_name: 'pushgateway'
-  #   honor_labels: true
-  #   scrape_interval: 30s
-  #   scrape_timeout: 15s
-  #   tls_config:
-  #     insecure_skip_verify: true
-  #   static_configs:
-  #   - targets: ['pushgateway:9091']
+  - job_name: 'pushgateway'
+    honor_labels: true
+    scrape_interval: 30s
+    scrape_timeout: 15s
+    tls_config:
+      insecure_skip_verify: true
+    static_configs:
+    - targets: ['pushgateway:9091']
