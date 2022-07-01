@@ -84,7 +84,7 @@ python3.10 trybatch.py
 
 ```
 
-visit http:localhost:9091 (pushgateway)
+visit http://localhost:9091 (pushgateway)
 
 there you will be able to see the pushed metrics by trybatch fake job!
 
@@ -93,3 +93,6 @@ then you can visit http:localhost:9090 (prometheus) to check the metrics over th
 you can create dashboard with the dashboard.json
 
 
+## Inspiration
+
+https://gist.github.com/codersquid/17f61049c1a817f26da250a4bd2df16d
